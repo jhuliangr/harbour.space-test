@@ -1,7 +1,7 @@
 
 function Navbar() {
     return (
-        <nav className='w-[100vw] fixed top-0 left-0 bg-main px-10 text-white py-4 flex justify-between items-center'>
+        <nav className='w-[100vw] fixed top-0 left-0 bg-main px-10 text-white py-4 flex justify-between items-center z-20'>
             <div className="flex">
                 <p className='flex align-text-top text-[15px] md:text-xl font-medium'>
                     HARBOUR SPACE
