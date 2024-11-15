@@ -9,7 +9,7 @@ export const getData = async () => {
             throw new Error("Error on network while fetching data");
         }
         const data = await response.json();
-        console.log(data)
+        
         return data;
     } catch (error) {
         console.error("Error fetching data:", error);

@@ -4,7 +4,7 @@ import { getData } from '../api/getApiData';
 type DataState = {
     data: any
 };
-const DataContext = createContext({
+export const DataContext = createContext({
     data: {}
 } as DataState);
 
@@ -27,5 +27,5 @@ export function DataContextProvider({ children }: PropsWithChildren) {
 }
 
 export function useDataContext() {
-    return useContext(DataContext);
+    return useContext<DataState>(DataContext);
 }

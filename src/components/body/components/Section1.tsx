@@ -11,7 +11,7 @@ export default function Section1() {
                     <div className='md:text-5xl  text-4xl text-left text-main font-medium '>
                         <p>{apiData?.name}</p>
                     </div>
-                    <img src="/image.png" alt="interaction_design" className='md:w-[240px] md:h-[240px] w-[150px] h-[150px] absolute md:mt-[-5.3rem] mt-[-4.5rem] md:ml-[14.8rem] ml-[11rem] z-[-1]' />
+                    <img src="/image.png" alt="interaction_design" className='lg:w-[240px] lg:h-[240px w-[150px] h-[150px] absolute lg:mt-[-5.3rem] mt-[-4.5rem] md:ml-[12rem] lg:ml-[14.8rem] ml-[11rem] z-[-1] object-cover' />
                 </div>
                 <div>
                     <div className='text-left grid md:grid-cols-2 md:w-[50%]'>
@@ -63,7 +63,7 @@ export default function Section1() {
                     </div>
                     <div className='px-10 py-5 border-2 border-[#DADADA] mt-5 text-center flex flex-col justify-center bg-white rounded-md'>
                         <div className='grid grid-cols-2'>
-                            <img src="/background.png" alt="background_detail" className='absolute z-[-1] right-0 hidden md:block' />
+                            <img src="/background.png" alt="background_detail" className='absolute z-[-1] right-0 hidden md:block md:w-[40%]' />
 
                             <div className='text-left'>
                                 <p className='text-main'>Location</p>
