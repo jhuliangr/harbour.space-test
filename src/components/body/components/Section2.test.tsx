@@ -33,7 +33,6 @@ describe('Section2 Component', () => {
             </MockDataProvider>
         );
 
-        // Verificar que los textos se renderizan correctamente
         expect(getByText('About the')).toBeDefined();
         expect(getByText('apprenticeships')).toBeDefined();
         expect(getByText('Información sobre las becas.')).toBeDefined();

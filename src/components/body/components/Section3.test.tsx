@@ -17,7 +17,7 @@ vi.mock('swiper/react', () => {
 vi.mock('./Section3Item', () =>
 ({
     default: () => <div>Mock Section3Item</div>
-}))
+}));
 
 describe('Section3 Component', () => {
     it('renders correctly with Swiper and Section3Item', () => {

@@ -6,4 +6,4 @@ export type FaqItem = {
         type: string;
         data: string;
     }[]
-}
+};

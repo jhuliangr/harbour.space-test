@@ -6,7 +6,7 @@ import Section4 from './Section4';
 
 vi.mock('./Dropdown', () => ({
     default: () => <div>Mock Dropdown</div>
-}))
+}));
 
 const mockFaqData = [
     {
@@ -50,7 +50,7 @@ describe('Section4 Component', () => {
         );
 
         fireEvent.click(getAllByText('+')[0]);
-        const message = screen.queryByText("This program is about...")
+        const message = screen.queryByText("This program is about...");
         expect(message).toBeVisible();
     });
 });
