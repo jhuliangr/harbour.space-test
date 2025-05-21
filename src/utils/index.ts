@@ -1,7 +1,5 @@
-const months = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-];
+import { MONTHS } from "../constants";
+
 export function formatTimeDifference(dateString: string): string {
     const targetDate = new Date(dateString);
 
@@ -33,5 +31,5 @@ export function formatDateString(dateString: string, addYear: boolean = false): 
     const monthIndex = date.getUTCMonth();
     const year = date.getUTCFullYear();
 
-    return `${day} ${months[monthIndex]} ${year}`;
+    return `${day} ${MONTHS[monthIndex]} ${year}`;
 }

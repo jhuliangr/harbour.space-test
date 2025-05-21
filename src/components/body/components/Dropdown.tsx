@@ -17,7 +17,7 @@ const Dropdown = () => {
                 <Arrow isOpen={isOpen} />
             </button>
 
-            <div className={`absolute left-0 z-10 w-full bg-white border-b border-l border-r ml-5 mt-[-20px]  border-gray-200 rounded-b-[3rem]  overflow-hidden transition-all duration-500 ${isOpen ? 'origin-top max-h-screen' : 'max-h-0 origin-bottom'}`}>
+            <div className={`absolute left-0 z-10 w-full bg-white border-b border-l border-r ml-5 mt-[-20px]  border-gray-200 rounded-b-[3rem]  overflow-hidden transition-all duration-500 ${isOpen ? 'origin-top max-h-screen' : 'max-h-0 border-white origin-bottom'}`}>
                 <div className="p-5">
                     <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">All</a>
                     <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Admisions</a>

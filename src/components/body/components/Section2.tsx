@@ -3,7 +3,7 @@ import { useDataContext } from '../../../context/DataContext';
 
 function Section2() {
     const { data } = useDataContext();
-    const apiData = data.scholarship;
+    const apiData = data?.scholarship ?? null;
     return (
         <section className='mt-[20vh]'>
             <div className='grid md:grid-cols-2 grid-cols-1'>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDataContext } from "../../../context/DataContext";
 import Dropdown from "./Dropdown"
+import { FaqItem } from "../../../types/FaqItem";
 
 function Section4() {
     const { data } = useDataContext();
@@ -22,7 +23,7 @@ function Section4() {
             </div>
             <div>
                 {
-                    apiData?.map((item: Item, i: number) =>
+                    apiData?.map((item: FaqItem, i: number) =>
                         <Faq key={i} item={item} />
                     )
                 }
@@ -34,17 +35,8 @@ function Section4() {
 
 export default Section4
 
-type Item = {
-    type: string;
-    question: string;
-    answer:
-    {
-        type: string;
-        data: string;
-    }[]
-}
 
-function Faq({ item }: { item: Item }) {
+function Faq({ item }: { item: FaqItem }) {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     return (
         <div className="border-t-[1px] border-b-[1px] grid md:grid-cols-2 grid-cols-1 text-left p-10 w-full ">

@@ -1,9 +1,8 @@
 import { createContext, useContext, useState, PropsWithChildren, useEffect } from 'react';
 import { getData } from '../api/getApiData';
+import { DataState } from '../types/Datastate';
 
-type DataState = {
-    data: any
-};
+
 export const DataContext = createContext({
     data: {}
 } as DataState);

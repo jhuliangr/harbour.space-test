@@ -8,8 +8,8 @@ export const getData = async () => {
         if (!response.ok) {
             throw new Error("Error on network while fetching data");
         }
+        console.log('===> ',response)
         const data = await response.json();
-        
         return data;
     } catch (error) {
         console.error("Error fetching data:", error);

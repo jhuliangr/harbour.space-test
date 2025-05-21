@@ -1,5 +1,5 @@
 import { useDataContext } from '../../../context/DataContext';
-import { formatDateString, formatTimeDifference } from '../../..';
+import { formatDateString, formatTimeDifference } from '../../../utils';
 
 export default function Section1() {
     const { data } = useDataContext();
