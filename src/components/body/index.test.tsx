@@ -1,19 +1,19 @@
-import { render } from '@testing-library/react'
-import Body from './'
-import { describe, expect, it, vi } from 'vitest'
+import { describe, expect, it, vi } from 'vitest';
+import { render } from '@testing-library/react';
+import Body from './';
 
 vi.mock('./components/Section1', () => ({
     default: () => <div>Section1</div>,
-}))
+}));
 vi.mock('./components/Section2', () => ({
     default: () => <div>Section2</div>,
-}))
+}));
 vi.mock('./components/Section3', () => ({
     default: () => <div>Section3</div>,
-}))
+}));
 vi.mock('./components/Section4', () => ({
     default: () => <div>Section4</div>,
-}))
+}));
 
 describe('Body Component', () => {
     it('renders all sections', () => {

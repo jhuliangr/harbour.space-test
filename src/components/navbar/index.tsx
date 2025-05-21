@@ -2,7 +2,7 @@
 function Navbar() {
     return (
         <nav className='w-[100vw] fixed top-0 left-0 bg-main px-10 text-white py-4 flex justify-between items-center z-20'>
-            <div className="flex">
+            <div className="flex select-none cursor-pointer">
                 <p className='flex align-text-top text-[15px] md:text-xl font-medium'>
                     HARBOUR SPACE
                 </p>
@@ -11,13 +11,13 @@ function Navbar() {
                 </p>
             </div>
             <div className="flex">
-                <div className="bg-[#4fa16c] right-[10%] mt-[-15px] absolute p-8 rounded-full font-medium hidden md:block">
+                <div className="bg-[#4fa16c] right-[10%] mt-[-15px] absolute p-8 rounded-full font-medium hidden md:block cursor-pointer">
                     <p>
                         APPLY
                     </p>
                     NOW
                 </div>
-                <div className="px-2 py-3 bg-[#523C94] md:bg-transparent">
+                <div className="px-2 py-3 bg-[#523C94] md:bg-transparent cursor-pointer">
                     <div className="flex flex-col items-center">
                         <div className="flex items-center mb-[5px]">
                             <div className="w-2 h-2 mr-0 border-white border-[3px] bg-main absolute"></div>

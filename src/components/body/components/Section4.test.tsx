@@ -1,7 +1,7 @@
-import { describe, expect, it, vi } from 'vitest';
-import { DataContext } from '../../../context/DataContext'; // Asegúrate de que esta ruta sea correcta
-import { ReactNode } from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
+import { DataContext } from '../../../context/DataContext';
+import { describe, expect, it, vi } from 'vitest';
+import { ReactNode } from 'react';
 import Section4 from './Section4';
 
 vi.mock('./Dropdown', () => ({

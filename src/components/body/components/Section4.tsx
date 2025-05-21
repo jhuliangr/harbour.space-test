@@ -1,14 +1,14 @@
-import { useState } from "react";
 import { useDataContext } from "../../../context/DataContext";
-import Dropdown from "./Dropdown"
 import { FaqItem } from "../../../types/FaqItem";
+import Dropdown from "./Dropdown";
+import { useState } from "react";
 
 function Section4() {
     const { data } = useDataContext();
     const apiData = data?.scholarship?.faqs?.items;
     return (
-        <section className="mt-[120vh] h-screen">
-            <div className="flex justify-between flex-wrap mb-10">
+        <section className="mt-[120vh]">
+            <div className="flex justify-between flex-wrap pb-10">
                 <div>
                     <p className="text-main text-5xl w-[70%] text-left font-medium my-5">
                         Frequently asked questions

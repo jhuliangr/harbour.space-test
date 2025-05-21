@@ -1,8 +1,8 @@
-import { ReactNode } from "react";
 import { DataContext } from "../../../context/DataContext";
+import { render } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import Section2 from "./Section2";
-import { render } from "@testing-library/react";
+import { ReactNode } from "react";
 
 const mockData = {
     scholarship: {

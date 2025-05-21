@@ -1,7 +1,7 @@
-import 'swiper/swiper-bundle.css';
-import Section3Item from './Section3Item';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import Section3Item from './Section3Item';
+import 'swiper/swiper-bundle.css';
 
 function Section3() {
     return (

@@ -1,14 +1,19 @@
-import { useState } from 'react';
+import { useClickOutside } from '../../../hooks/useClickOutside';
+import { useRef, useState } from 'react';
 
 const Dropdown = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
-
+    const ref = useRef<HTMLDivElement>(null);
+    useClickOutside(ref, () => setIsOpen(false));
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     };
 
     return (
-        <div className="relative inline-block text-left">
+        <div
+            className="relative inline-block text-left"
+            ref={ref}
+        >
             <button
                 onClick={toggleDropdown}
                 className={`flex items-center justify-between w-full text-main text-lg p-5 py-6 ml-5 font-medium bg-white  border-gray-300  transition-all border ${isOpen ? 'duration-100 border-b-0 rounded-b-none rounded-t-[50px]' : 'duration-1000 origin-bottom rounded-full '}`}

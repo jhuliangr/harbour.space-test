@@ -18,7 +18,7 @@ function Section3Item() {
                 </div>
             </div>
             <div className='flex justify-end mr-10'>
-                <div className='bg-main text-white rounded-full px-10 py-3 font-medium text-lg'>
+                <div className='bg-main text-white rounded-full px-10 py-3 font-medium text-lg hover:bg-violet-500 cursor-pointer transition-colors duration-300'>
                     Drag
                 </div>
             </div>

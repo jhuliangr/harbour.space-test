@@ -1,5 +1,5 @@
-import React from 'react';
 import { useDataContext } from '../../../context/DataContext';
+import React from 'react';
 
 function Section2() {
     const { data } = useDataContext();

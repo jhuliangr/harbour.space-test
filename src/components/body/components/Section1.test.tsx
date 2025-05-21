@@ -1,7 +1,7 @@
+import { DataContext } from '../../../context/DataContext';
 import { render } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 import { ReactNode } from 'react';
-import { DataContext } from '../../../context/DataContext';
 import Section1 from './Section1';
 
 const mockData = {

@@ -1,5 +1,5 @@
-import { render } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
+import { render } from '@testing-library/react';
 import Section3 from './Section3';
 import { ReactNode } from 'react';
 

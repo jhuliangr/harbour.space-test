@@ -1,5 +1,5 @@
-import { useDataContext } from '../../../context/DataContext';
 import { formatDateString, formatTimeDifference } from '../../../utils';
+import { useDataContext } from '../../../context/DataContext';
 
 export default function Section1() {
     const { data } = useDataContext();
@@ -45,7 +45,7 @@ export default function Section1() {
                         </div>
                     }
                     <div className='flex mt-12'>
-                        <div className='bg-main rounded-full text-white text-center  py-5 px-10'>
+                        <div className='bg-main hover:bg-violet-500 rounded-full text-white text-center py-5 px-10 cursor-pointer transition-colors duration-300'>
                             Apply Now
                         </div>
                     </div>
